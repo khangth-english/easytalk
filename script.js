@@ -12,25 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form Submission Handler
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const message = this.querySelector('textarea').value;
-        
-        // Show success message
-        alert(`Thank you ${name}! Your message has been received. We'll get back to you soon at ${email}`);
-        
-        // Reset form
-        this.reset();
-    });
-}
-
 // Scroll Animation - Fade in elements as they come into view
 const observerOptions = {
     threshold: 0.1,
@@ -47,7 +28,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe all cards and sections
-document.querySelectorAll('.schedule-card, .material-card, .announcement-item').forEach(el => {
+document.querySelectorAll('.schedule-card, .gallery-item, .announcement-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'all 0.6s ease';
