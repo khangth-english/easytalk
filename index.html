@@ -130,11 +130,14 @@
                     <p><strong>Email:</strong> info@easytalk.com</p>
                     <p><strong>Phone:</strong> +84 764 008872</p>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/xpqvweww" method="POST">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpqvweww" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        ✅ Message sent successfully! We'll get back to you soon.
+                    </div>
                 </form>
             </div>
         </div>
