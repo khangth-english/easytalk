@@ -1,0 +1,11 @@
+theme: jekyll-theme-minimal
+title: EasyTalk - English Classes
+description: Master English with Interactive Classes & Expert Guidance
+github_username: khangth-english
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - "_pages"
