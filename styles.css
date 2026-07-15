@@ -138,7 +138,7 @@ body {
 }
 
 .schedule h2,
-.materials h2,
+.gallery h2,
 .announcements h2,
 .contact h2 {
     text-align: center;
@@ -195,61 +195,72 @@ body {
     transform: translateX(5px);
 }
 
-/* Materials Section */
-.materials {
+/* Gallery Section */
+.gallery {
     padding: 80px 20px;
     background-color: var(--white);
 }
 
-.materials-grid {
+.gallery-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin-bottom: 3rem;
+}
+
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
-.material-card {
-    background: var(--light-bg);
-    padding: 2rem;
+.gallery-item {
+    position: relative;
     border-radius: 10px;
-    text-align: center;
-    transition: var(--transition);
-    border-left: 4px solid var(--primary-color);
-}
-
-.material-card:hover {
-    transform: translateY(-8px);
+    overflow: hidden;
     box-shadow: var(--shadow);
-}
-
-.material-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.material-card h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.material-card p {
-    color: #6b7280;
-    margin-bottom: 1.5rem;
-}
-
-.btn-secondary {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--white);
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
     transition: var(--transition);
-    font-size: 0.95rem;
+    height: 300px;
 }
 
-.btn-secondary:hover {
-    background-color: #d97706;
-    transform: scale(1.05);
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(37, 99, 235, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 /* Announcements Section */
@@ -383,7 +394,7 @@ body {
     }
 
     .schedule-grid,
-    .materials-grid {
+    .gallery-grid {
         grid-template-columns: 1fr;
     }
 
@@ -392,10 +403,14 @@ body {
     }
 
     .schedule h2,
-    .materials h2,
+    .gallery h2,
     .announcements h2,
     .contact h2 {
         font-size: 2rem;
+    }
+
+    .gallery-item {
+        height: 250px;
     }
 }
 
@@ -418,10 +433,14 @@ body {
     }
 
     .schedule h2,
-    .materials h2,
+    .gallery h2,
     .announcements h2,
     .contact h2 {
         font-size: 1.5rem;
         margin-bottom: 2rem;
+    }
+
+    .gallery-item {
+        height: 200px;
     }
 }
