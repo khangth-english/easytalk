@@ -386,12 +386,14 @@ body {
     margin-bottom: 3rem;
 }
 
-.contact-content{
-    display:grid;
-    grid-template-columns: 1fr 350px 1fr;
-    gap:40px;
-    align-items:center;
+.contact-content {
+    display: grid;
+    grid-template-columns: 300px 350px 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
 }
+
 
 .contact-photo{
     text-align:center;
@@ -403,7 +405,7 @@ body {
     height:450px;
     object-fit:cover;
     border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
 .contact-info h3 {
@@ -480,6 +482,15 @@ body {
 
     .contact-content {
         grid-template-columns: 1fr;
+    }
+
+    .contact-photo {
+        order: -1;
+    }
+
+    .contact-photo img {
+        height: auto;
+        max-width: 280px;
     }
 
     .schedule h2,
