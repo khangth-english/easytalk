@@ -386,12 +386,24 @@ body {
     margin-bottom: 3rem;
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    max-width: 1000px;
-    margin: 0 auto;
+.contact-content{
+    display:grid;
+    grid-template-columns: 1fr 350px 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.contact-photo{
+    text-align:center;
+}
+
+.contact-photo img{
+    width:100%;
+    max-width:350px;
+    height:450px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 .contact-info h3 {
