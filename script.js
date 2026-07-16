@@ -38,14 +38,14 @@ if (contactForm) {
                 
                 // Reset form
                 contactForm.reset();
-                successMessage.innerHTML = `✅ Thank you ${name}! Your message has been sent successfully. We'll get back to you soon!`;
+                successMessage.innerHTML = `✅ Cám ơn ${name}! Thông tin của bạn đã được gửi thành công. Thầy Khang sẽ liên hệ lại sớm nhé!`;
                 
                 // Hide success message after 5 seconds
                 setTimeout(() => {
                     successMessage.style.display = 'none';
                 }, 5000);
             } else {
-                alert('There was an error sending your message. Please try again.');
+                alert('Có lỗi xảy ra. Vui lòng thử lại!');
             }
         })
         .catch(error => {
