@@ -388,23 +388,24 @@ body {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 250px 220px 1fr;
+    grid-template-columns: 250px 180px 1fr;
     gap: 50px;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.contact-photo{
-    text-align:center;
+.contact-photo {
+    display: flex;
+    justify-content: center;
 }
 
 .contact-photo img {
-    width: 220px;
-    height: 300px;
+    width: 180px;
+    height: 240px;
     object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 .contact-info h3 {
