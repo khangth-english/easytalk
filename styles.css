@@ -388,9 +388,10 @@ body {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 250px 180px 1fr;
-    gap: 50px;
+    grid-template-columns: 250px 200px 1fr;
+    gap: 40px;
     align-items: center;
+
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -401,11 +402,14 @@ body {
 }
 
 .contact-photo img {
-    width: 180px;
-    height: 240px;
+    width: 200px;
+    height: 260px;
+
     object-fit: cover;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .contact-info h3 {
@@ -421,10 +425,14 @@ body {
 
 .contact-form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
+    width: 100%;
     padding: 12px;
     border: none;
     border-radius: 5px;
