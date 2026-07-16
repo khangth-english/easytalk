@@ -193,23 +193,23 @@
 
         </div>
 
-        <div class="testimonial-cta">
-            https://zalo.me/0764008872
-                Đăng ký ngay
-            </a>
-        </div>
+        <button
+        class="cta-btn"
+        onclick="window.open('https://zalo.me/0764008872', '_blank')">
+        💬 Tư vấn ngay
+        </button>
     </div>
 </section>
     
     <!-- Announcements Section -->
     <section id="announcements" class="announcements">
         <div class="container">
-            <h2>Latest Announcements</h2>
+            <h2>Thông báo</h2>
             <div class="announcements-list">
                 <div class="announcement-item">
                     <div class="announcement-date">July 7, 2026</div>
-                    <h3>Welcome to EasyTalk!</h3>
-                    <p>We're excited to launch our new English learning platform. Join us on this journey to master English together!</p>
+                    <h3>Khai giảng lớp tiếng Anh giao tiếp Cơ bản tháng 7/2026</h3>
+                    <p>Chiêu sinh học viên lớp tiếng Anh giao tiếp cơ bản tháng 7/2026, liên hệ thầy Khang để được tư vấn hỗ trợ ngay nhé!</p>
                 </div>
             </div>
         </div>
@@ -218,20 +218,25 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
+            <h2>Liên hệ hỗ trợ</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><strong>Email:</strong> info@easytalk.com</p>
-                    <p><strong>Phone:</strong> +84 764 008872</p>
+                    <h3>Thông tin liên hệ</h3>
+                    <p><strong>🚀 Thầy Khang - EasyTalk</strong>strong</p>
+                    <p><strong>📍 Online (Zoom) / TP. Hồ Chí Minh</p>
+                    <button
+                    class="cta-btn"
+                    onclick="window.open('https://zalo.me/0764008872', '_blank')">
+                    Liên hệ ngay
+                    </button>
                 </div>
                 <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpqvweww" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <input type="text" name="name" placeholder="Tên của bạn" required>
+                    <input type="text" name="phone" placeholder="Số điện thoại" required>
+                    <textarea name="message" placeholder="Nội dung cần hỗ trợ" rows="5" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
                     <div id="successMessage" class="success-message" style="display: none;">
-                        ✅ Message sent successfully! We'll get back to you soon.
+                        ✅ Thông tin đã được gửi thành công! Thầy Khang sẽ liên hệ lại sớm nhất nhé!.
                     </div>
                 </form>
             </div>
