@@ -283,6 +283,41 @@ body {
     text-align: center;
 }
 
+/* Review Section */
+.testimonials {
+    padding: 80px 20px;
+    background: #f8f9fc;
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.testimonial-text {
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    color: #666;
+}
+
+.testimonial-cta {
+    margin-top: 40px;
+}
+
 /* Announcements Section */
 .announcements {
     padding: 80px 20px;
