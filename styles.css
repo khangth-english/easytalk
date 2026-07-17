@@ -375,9 +375,6 @@ body {
 }
 
 /* Contact Section */
-/* =========================
-   CONTACT SECTION
-========================= */
 
 .contact {
     padding: 80px 20px;
@@ -392,7 +389,7 @@ body {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 250px 200px 1fr;
+    grid-template-columns: 250px 250px 500px;
     gap: 40px;
     align-items: center;
 
