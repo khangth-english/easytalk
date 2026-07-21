@@ -1,264 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thầy Khang - EasyTalk | Học để sử dụng – Nói để tự tin</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EasyTalk by Thầy Khang — Giao tiếp tiếng Anh tự tin</title>
+<meta name="description" content="Lớp học tiếng Anh giao tiếp thực tế cùng Thầy Khang. Lớp nhỏ, thực hành nhiều, phù hợp sinh viên và người đi làm." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">EasyTalk</div>
-            <ul class="nav-links">
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#schedule">Khóa học</a></li>
-                <li><a href="#gallery">Về lớp học</a></li>
-                <li><a href="#announcements">Thông báo</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </div>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">
+      <span class="mark">E</span>
+      <span>EasyTalk<small>by Thầy Khang</small></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Trang chủ</a></li>
+        <li><a href="#courses">Khóa học</a></li>
+        <li><a href="#about">Về Thầy Khang</a></li>
+        <li><a href="#testi">Học viên nói gì</a></li>
+        <li><a href="#announce">Thông báo</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
     </nav>
+    <div class="nav-right">
+      <a href="#contact" class="btn btn-gold">Tư vấn miễn phí</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Học tiếng Anh tự tin cùng Thầy Khang</h1>
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-left">
+      <span class="badge">🎯 Lớp học nhỏ • Thực hành nhiều • Phù hợp người đi làm</span>
+      <h1>Giao tiếp tiếng Anh tự tin trong công việc và cuộc sống</h1>
+      <p class="lead">Lớp học nhỏ cùng Thầy Khang, tập trung vào tình huống thực tế, phản xạ nhanh và ứng dụng tiếng Anh tự nhiên hằng ngày.</p>
+      <ul class="check-list">
+        <li><span class="tick">✓</span> Lộ trình phù hợp từng trình độ</li>
+        <li><span class="tick">✓</span> Thực hành giao tiếp trong từng buổi học</li>
+        <li><span class="tick">✓</span> Theo sát tiến độ và phản hồi cá nhân</li>
+        <li><span class="tick">✓</span> Phù hợp sinh viên, người đi làm và người chuẩn bị phỏng vấn</li>
+      </ul>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-gold btn-lg">💬 Tư vấn ngay qua Zalo</a>
+        <a href="#courses" class="btn btn-white btn-lg">Xem các khóa học</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="teacher-card">
+        <!-- Để dùng ảnh thật: bỏ comment dòng img dưới, xóa .avatar-illustration, đặt ảnh vào images/ -->
+        <div class="teacher-photo">
+          <!-- <img src="images/thay-khang.jpg" alt="Thầy Khang" class="teacher-img" /> -->
+          <div class="avatar-illustration">👨‍🏫</div>
+          <div class="teacher-overlay">
+            <div class="name">Thầy Khang</div>
+            <div class="role">EasyTalk English Class</div>
+            <div class="desc">Đồng hành cùng học viên luyện nói tiếng Anh thực tế hơn mỗi ngày.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <p class="hero-subtitle">
-            <strong>Giao tiếp tự nhiên - Phản xạ nhanh - Ứng dụng thực tế</strong>
-        </p>
+<!-- ============ TRUST STATS ============ -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-card"><div class="num">50+</div><div class="label">Học viên đã đồng hành</div></div>
+    <div class="stat-card"><div class="num">4–8</div><div class="label">Học viên mỗi lớp</div></div>
+    <div class="stat-card"><div class="num">100+</div><div class="label">Giờ thực hành giao tiếp</div></div>
+    <div class="stat-card"><div class="num">24h</div><div class="label">Phản hồi tư vấn</div></div>
+  </div>
+</section>
 
-        <p class="hero-description">
-            Dù bạn là sinh viên, người đi làm hay đang chuẩn bị cho các buổi phỏng vấn,
-            các lớp học của Thầy Khang sẽ giúp bạn tự tin sử dụng tiếng Anh trong cuộc sống
-            và công việc hằng ngày.
-        </p>
-
-        <ul class="hero-benefits">
-            <li>✅ Lớp học tương tác trực tiếp</li>
-            <li>✅ Lộ trình phù hợp từng trình độ</li>
-            <li>✅ Số lượng học viên giới hạn để đảm bảo chất lượng</li>
-            <li>✅ Hỗ trợ và theo sát quá trình học</li>
+<!-- ============ ABOUT ============ -->
+<section class="sec about" id="about">
+  <div class="container about-grid">
+    <div class="about-img">
+      <!-- <img src="images/thay-khang-2.jpg" alt="Thầy Khang giảng dạy" /> -->
+      <div class="face">👨‍🏫</div>
+      <div class="tag">
+        <div class="ic">🗣️</div>
+        <div><b>Luyện nói mỗi buổi</b><span>Thực hành giao tiếp trực tiếp</span></div>
+      </div>
+    </div>
+    <div class="about-text">
+      <span class="eyebrow">Về Thầy Khang</span>
+      <h2>Về Thầy Khang</h2>
+      <p>EasyTalk là lớp học tiếng Anh giao tiếp được xây dựng theo triết lý “học để dùng được”. Thầy Khang tập trung vào tiếng Anh thực tế, giao tiếp trong đời sống và công việc, giúp học viên tự tin phản xạ thay vì chỉ học thuộc lòng ngữ pháp.</p>
+      <p>Mỗi lớp học được giữ ở quy mô nhỏ để Thầy có thể sửa lỗi phát âm trực tiếp, theo sát tiến độ của từng bạn và tạo môi trường để mọi học viên đều được nói nhiều nhất có thể.</p>
+      <div class="highlight-box">
+        <h4>Điểm khác biệt của lớp học</h4>
+        <ul>
+          <li><span class="tick">✓</span> Học qua tình huống thực tế</li>
+          <li><span class="tick">✓</span> Sửa lỗi phát âm và phản xạ trực tiếp</li>
+          <li><span class="tick">✓</span> Lộ trình rõ ràng theo từng trình độ</li>
+          <li><span class="tick">✓</span> Lớp nhỏ để học viên được thực hành nhiều hơn</li>
         </ul>
-
-        <button
-        class="cta-btn"
-        onclick="window.open('https://zalo.me/0764008872', '_blank')">
-        💬 Tư vấn ngay
-        </button>
+      </div>
     </div>
+  </div>
 </section>
 
-
-    <!-- Class Schedule Section -->
-    <section id="schedule" class="schedule">
-        <div class="container">
-            <h2>Các lớp học</h2>
-            <div class="schedule-grid">
-                <div class="schedule-card">
-                    <h3>Tiếng Anh giao tiếp Cơ bản</h3>
-                    <p><strong>Trình độ:</strong> Mất gốc - A2</p>
-                    <p><strong>Thời lượng:</strong> 8-10 tuần</p>
-                    <p><strong>Phù hợp cho:</strong></p>
-                    <p>• Người mất gốc</p>
-                    <p>• Muốn giao tiếp cơ bản</p>
-                    <p>• Cần xây nền tảng từ đầu</p>
-                    <p>✅ Phát âm chuẩn</p>
-                    <p>✅ Câu giao tiếp thông dụng</p>
-                    <p>✅ Phản xạ nghe nói</p>
-                    <button
-                    class="cta-btn"
-                    onclick="window.open('https://zalo.me/0764008872', '_blank')">
-                    Đăng ký ngay
-                    </button>
-                </div>
-                
-                <div class="schedule-card">
-                    <h3>Tiếng Anh giao tiếp Nâng cao</h3>
-                    <p><strong>Trình độ:</strong> A2 - B2</p>
-                    <p><strong>Thời lượng:</strong> 8-10 tuần</p>
-                    <p><strong>Phù hợp cho:</strong></p>
-                    <p>• Người đi làm, định cư, du học</p>
-                    <p>• Giao tiếp với khách hàng quốc tế</p>
-                    <p>• Cải thiện sự tự tin khi nói</p>
-                    <p>✅ Thảo luận tình huống thực tế</p>
-                    <p>✅ Thuyết trình ngắn</p>
-                    <p>✅ Tăng vốn từ công việc</p>
-                    <button
-                    class="cta-btn"
-                    onclick="window.open('https://zalo.me/0764008872', '_blank')">
-                    Đăng ký ngay
-                    </button>
-                </div>
-                
-                <div class="schedule-card">
-                    <h3>Tiếng Anh Công việc & Phỏng vấn</h3>
-                    <p><strong>Trình độ:</strong> B1 trở lên</p>
-                    <p><strong>Thời lượng:</strong> 8-10 tuần</p>
-                    <p>✅ Email chuyên nghiệp</p>
-                    <p>✅ Họp và thuyết trình</p>
-                    <p>✅ Phỏng vấn tiếng Anh</p>
-                    <p>✅ Giao tiếp nơi công sở</p>
-                    <button
-                    class="cta-btn"
-                    onclick="window.open('https://zalo.me/0764008872', '_blank')">
-                    Đăng ký ngay
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <h2>Về lớp học của Thầy Khang</h2>
-            <p class="gallery-subtitle">Vì sao chọn lớp học của Thầy Khang?</p>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/IMG_1784193527416_1784193573711.jpg" alt="Học thực tế - Không học vẹt">
-                    <div class="gallery-overlay">
-                        <h3><strong>Học thực tế - Không học vẹt</strong></h3>
-                        <p>Tập trung vào tình huống giao tiếp thật thay vì chỉ học ngữ pháp</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/IMG_1784193528960_1784193574780.jpg" alt="Lớp học nhỏ">
-                    <div class="gallery-overlay">
-                        <h3><strong>Lớp học nhỏ</strong></h3>
-                        <p>Giúp mỗi học viên có nhiều cơ hội thực hành hơn</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/IMG_1784193528378_1784193574481.jpg" alt="Theo sát tiến độ">
-                    <div class="gallery-overlay">
-                        <h3><strong>Theo sát tiến độ</strong></h3>
-                        <p>Có bài tập, nhận xét và hướng dẫn xuyên suốt khóa học</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/IMG_1784193527941_1784193574181.jpg" alt="Cộng đồng học tập tích cực">
-                    <div class="gallery-overlay">
-                        <h3><strong>Cộng đồng học tập tích cực</strong></h3>
-                        <p>Môi trường luyện tập và hỗ trợ lẫn nhau</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials">
-    <div class="container">
-        <h2>Học viên thầy Khang nói gì?</h2>
-        <p class="section-subtitle">
-            Những chia sẻ từ học viên đã đồng hành cùng Thầy Khang
-        </p>
-
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    "Sau 2 tháng học, mình tự tin giao tiếp với khách hàng nước ngoài hơn rất nhiều.
-                    Các buổi học thực tế và dễ áp dụng."
-                </p>
-                <div class="testimonial-author">
-                    <strong>Nguyễn Minh A--</strong><br>
-                    Nhân viên IT
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    "Thầy Khang hướng dẫn rất tận tình, dễ hiểu và luôn tạo cơ hội để học viên luyện nói."
-                </p>
-                <div class="testimonial-author">
-                    <strong>Trần Lan P-----</strong><br>
-                    Kế toán
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    "Mình đã vượt qua vòng phỏng vấn định cư sau khóa học và tự tin hơn khi sống và làm việc tại nước ngoài."
-                </p>
-                <div class="testimonial-author">
-                    <strong>Lê Tuấn C---</strong><br>
-                    Định cư Canada
-                </div>
-            </div>
-        </div>
-        
-        <div class="testimonial-cta">
-            <button
-                class="cta-btn"
-                onclick="window.open('https://zalo.me/0764008872', '_blank')">
-                💬 Tư vấn ngay
-            </button>
-        </div>
+<!-- ============ COURSES ============ -->
+<section class="sec courses" id="courses">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Khóa học</span>
+      <h2>Chọn khóa học phù hợp với bạn</h2>
+      <p>Mỗi khóa học được thiết kế theo nhu cầu thực tế, giúp học viên tiến bộ từng bước và sử dụng tiếng Anh tự tin hơn.</p>
     </div>
+    <div class="course-grid">
+      <div class="course-card">
+        <div class="course-icon">🌱</div>
+        <h3>Tiếng Anh giao tiếp Cơ bản</h3>
+        <p class="sub">Dành cho người mới bắt đầu hoặc mất gốc</p>
+        <div class="course-meta">
+          <span>Trình độ: Mất gốc – A2</span>
+          <span>8–10 tuần</span>
+        </div>
+        <ul>
+          <li><span class="tick">✓</span> Xây dựng nền tảng phát âm chuẩn</li>
+          <li><span class="tick">✓</span> Từ vựng &amp; mẫu câu giao tiếp hằng ngày</li>
+          <li><span class="tick">✓</span> Luyện phản xạ nghe – nói cơ bản</li>
+          <li><span class="tick">✓</span> Tự tin bắt đầu hội thoại đơn giản</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline btn-block">Đăng ký tư vấn</a>
+      </div>
+      <div class="course-card featured">
+        <span class="pill-popular">🔥 Phổ biến nhất</span>
+        <div class="course-icon">🚀</div>
+        <h3>Tiếng Anh giao tiếp Nâng cao</h3>
+        <p class="sub">Nâng phản xạ và mở rộng chủ đề giao tiếp</p>
+        <div class="course-meta">
+          <span>Trình độ: A2 – B2</span>
+          <span>8–10 tuần</span>
+        </div>
+        <ul>
+          <li><span class="tick">✓</span> Giao tiếp trôi chảy nhiều chủ đề</li>
+          <li><span class="tick">✓</span> Phản xạ nhanh trong hội thoại thực tế</li>
+          <li><span class="tick">✓</span> Nâng cấp phát âm &amp; ngữ điệu tự nhiên</li>
+          <li><span class="tick">✓</span> Diễn đạt ý kiến rõ ràng, tự tin</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-block">Chọn khóa này</a>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">💼</div>
+        <h3>Tiếng Anh Công việc &amp; Phỏng vấn</h3>
+        <p class="sub">Dành cho người đi làm hoặc chuẩn bị phỏng vấn</p>
+        <div class="course-meta">
+          <span>Trình độ: B1 trở lên</span>
+          <span>8–10 tuần</span>
+        </div>
+        <ul>
+          <li><span class="tick">✓</span> Giao tiếp trong họp &amp; môi trường quốc tế</li>
+          <li><span class="tick">✓</span> Luyện trả lời phỏng vấn tiếng Anh</li>
+          <li><span class="tick">✓</span> Email &amp; thuyết trình chuyên nghiệp</li>
+          <li><span class="tick">✓</span> Tự tin thể hiện bản thân với nhà tuyển dụng</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline btn-block">Đăng ký tư vấn</a>
+      </div>
+    </div>
+  </div>
 </section>
-    
-    <!-- Announcements Section -->
-    <section id="announcements" class="announcements">
-        <div class="container">
-            <h2>Thông báo</h2>
-            <div class="announcements-list">
-                <div class="announcement-item">
-                    <div class="announcement-date">July 7, 2026</div>
-                    <h3>Khai giảng lớp tiếng Anh giao tiếp Cơ bản tháng 7/2026</h3>
-                    <p>Chiêu sinh học viên lớp tiếng Anh giao tiếp cơ bản tháng 7/2026, liên hệ thầy Khang để được tư vấn hỗ trợ ngay nhé!</p>
-                </div>
+
+<!-- ============ WHY CHOOSE ============ -->
+<section class="sec why">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Lý do chọn EasyTalk</span>
+      <h2>Vì sao học viên chọn EasyTalk?</h2>
+      <p>Một môi trường học tập ấm áp, thực tế và tập trung vào kết quả giao tiếp thật sự.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-media m1"><span>🎧</span></div>
+        <div class="why-body"><h4>Học thực tế, không học vẹt</h4><p>Tập trung vào tình huống giao tiếp thật thay vì học thuộc lòng ngữ pháp.</p></div>
+      </div>
+      <div class="why-card">
+        <div class="why-media m2"><span>👥</span></div>
+        <div class="why-body"><h4>Lớp học nhỏ</h4><p>4–8 học viên mỗi lớp, đảm bảo ai cũng được nói và được sửa trực tiếp.</p></div>
+      </div>
+      <div class="why-card">
+        <div class="why-media m3"><span>📈</span></div>
+        <div class="why-body"><h4>Theo sát tiến độ</h4><p>Phản hồi cá nhân thường xuyên, giúp bạn tiến bộ rõ ràng theo lộ trình.</p></div>
+      </div>
+      <div class="why-card">
+        <div class="why-media m4"><span>🤝</span></div>
+        <div class="why-body"><h4>Cộng đồng học tập tích cực</h4><p>Môi trường thân thiện, khích lệ để bạn tự tin luyện nói mỗi ngày.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="sec testi" id="testi">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Cảm nhận học viên</span>
+      <h2>Học viên nói gì về EasyTalk?</h2>
+      <p>Những chia sẻ chân thật từ các bạn đã đồng hành cùng Thầy Khang.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Sau 2 tháng mình đã tự tin nói chuyện với đồng nghiệp nước ngoài. Lớp nhỏ nên được Thầy sửa phát âm rất kỹ.”</p>
+        <div class="testi-author">
+          <div class="av">M</div>
+          <div><b>Minh Anh</b><span>Nhân viên văn phòng • Giao tiếp công việc</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Mình mất gốc hoàn toàn, nhưng lộ trình rõ ràng và cách dạy thực tế giúp mình phản xạ nhanh hơn hẳn.”</p>
+        <div class="testi-author">
+          <div class="av">T</div>
+          <div><b>Thanh Tú</b><span>Sinh viên • Luyện giao tiếp cơ bản</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Khóa phỏng vấn cực kỳ hữu ích. Mình đã vượt qua vòng phỏng vấn tiếng Anh và nhận được offer mong muốn.”</p>
+        <div class="testi-author">
+          <div class="av">H</div>
+          <div><b>Hoàng Nam</b><span>IT Engineer • Chuẩn bị phỏng vấn</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-cta">
+      <a href="#contact" class="btn btn-primary btn-lg">Tư vấn lớp phù hợp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANNOUNCEMENT ============ -->
+<section class="sec announce" id="announce">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Cập nhật</span>
+      <h2>Thông báo mới nhất</h2>
+    </div>
+    <div class="announce-card">
+      <div class="announce-date">
+        <div class="d">07</div>
+        <div class="m">Th7 2026</div>
+      </div>
+      <div class="announce-info">
+        <h3>Khai giảng lớp Tiếng Anh giao tiếp Cơ bản tháng 7/2026</h3>
+        <p>Chiêu sinh học viên lớp tiếng Anh giao tiếp cơ bản tháng 7/2026. Liên hệ Thầy Khang để được tư vấn lộ trình phù hợp.</p>
+        <a href="#contact" class="btn btn-primary">Xem chi tiết</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec contact" id="contact">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Sẵn sàng bắt đầu học tiếng Anh tự tin hơn?</h2>
+      <p>Để lại thông tin, EasyTalk sẽ tư vấn lớp học phù hợp với trình độ và mục tiêu của bạn.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="info-card">
+          <ul>
+            <li><span class="ic">📍</span><div><b>Online / TP. Hồ Chí Minh</b><span>Học linh hoạt, tiết kiệm thời gian di chuyển</span></div></li>
+            <li><span class="ic">💬</span><div><b>Zalo tư vấn nhanh</b><span>Nhắn tin để được hỗ trợ ngay</span></div></li>
+            <li><span class="ic">⏰</span><div><b>Phản hồi trong vòng 24 giờ</b><span>Đội ngũ luôn sẵn sàng hỗ trợ bạn</span></div></li>
+            <li><span class="ic">🎯</span><div><b>Tư vấn lộ trình miễn phí</b><span>Đánh giá trình độ và gợi ý khóa phù hợp</span></div></li>
+          </ul>
+        </div>
+        <div class="mini-teacher">
+          <div class="av">👨‍🏫</div>
+          <div><b>Thầy Khang</b><br><span>EasyTalk English Class</span></div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="form-card">
+          <h3>Đăng ký tư vấn miễn phí</h3>
+          <p class="fc-sub">Điền thông tin bên dưới, Thầy Khang sẽ liên hệ lại với bạn sớm nhất.</p>
+          <!-- Thay YOUR_FORM_ID bằng ID Formspree của bạn (https://formspree.io) -->
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="field">
+              <label for="name">Họ và tên</label>
+              <input id="name" name="name" type="text" placeholder="Nguyễn Văn A" required />
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Liên hệ hỗ trợ</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Thông tin liên hệ</h3>
-                    <p><strong>🚀 Thầy Khang - EasyTalk</strong></p>
-                    <p><strong>📍 Online (Zoom) / TP. Hồ Chí Minh</strong></p>
-                    <button
-                    class="cta-btn"
-                    onclick="window.open('https://zalo.me/0764008872', '_blank')">
-                    💬 Tư vấn ngay
-                    </button>
-                </div>
-
-                <!-- Ảnh -->
-                
-                <div class="contact-photo">
-                    <img src="images/IMG_20260716_155711.jpg" alt="Thầy Khang">
-                </div>
-
-
-                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpqvweww" method="POST">
-                    <input type="text" name="name" placeholder="Tên của bạn" required>
-                    <input type="tel" name="phone" placeholder="Số điện thoại" required>
-                    <textarea name="message" placeholder="Nội dung cần hỗ trợ (lớp học/ nhu cầu học,...)" rows="5" required></textarea>
-                    <button type="submit" class="btn">Gửi</button>
-                    <div id="successMessage" class="success-message" style="display: none;">
-                        ✅ Thông tin đã được gửi thành công! Thầy Khang sẽ liên hệ lại sớm nhất nhé!
-                    </div>
-                </form>
+            <div class="field">
+              <label for="phone">Số điện thoại</label>
+              <input id="phone" name="phone" type="tel" placeholder="09xx xxx xxx" required />
             </div>
+            <div class="field">
+              <label for="course">Bạn muốn học khóa nào?</label>
+              <select id="course" name="course">
+                <option value="">-- Chọn khóa học --</option>
+                <option>Tiếng Anh giao tiếp Cơ bản</option>
+                <option>Tiếng Anh giao tiếp Nâng cao</option>
+                <option>Tiếng Anh Công việc &amp; Phỏng vấn</option>
+                <option>Chưa chắc chắn, cần tư vấn</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="goal">Mục tiêu học tiếng Anh của bạn</label>
+              <textarea id="goal" name="goal" placeholder="Ví dụ: Giao tiếp tự tin trong công việc, chuẩn bị phỏng vấn..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Gửi thông tin tư vấn</button>
+            <div id="successMessage" class="success-message"></div>
+          </form>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Thầy Khang - EasyTalk. All rights reserved.</p>
-            <p>Powered by GitHub Pages</p>
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span class="mark">E</span><span>EasyTalk<small>by Thầy Khang</small></span></div>
+        <p>Lớp học tiếng Anh giao tiếp thực tế, tập trung vào phản xạ và ứng dụng hằng ngày. Online English Classes | Ho Chi Minh City.</p>
+        <div class="social">
+          <a href="#" aria-label="Zalo">💬</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Email">✉️</a>
         </div>
-    </footer>
+      </div>
+      <div>
+        <h5>Khóa học</h5>
+        <ul>
+          <li><a href="#courses">Giao tiếp Cơ bản</a></li>
+          <li><a href="#courses">Giao tiếp Nâng cao</a></li>
+          <li><a href="#courses">Công việc &amp; Phỏng vấn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Liên kết</h5>
+        <ul>
+          <li><a href="#about">Về Thầy Khang</a></li>
+          <li><a href="#testi">Học viên nói gì</a></li>
+          <li><a href="#announce">Thông báo</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 <span>Thầy Khang – EasyTalk</span>. All rights reserved. &nbsp;•&nbsp; Online English Classes | Ho Chi Minh City &nbsp;•&nbsp; Zalo | Facebook | Email
+    </div>
+  </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
